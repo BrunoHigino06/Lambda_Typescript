@@ -8,9 +8,9 @@ export class LambdaStack extends Stack {
     super(scope, id, props);
 
     const MapfreAwsfnPipefyRelatorioExportTechProcess = new lambda.Function(this, 'MapfreAwsfnPipefyRelatorioExportTechProcess', {
-      code: lambda.Code.fromAsset('./src'),
+      code: lambda.Code.fromAsset('./src/MapfreAwsfnPipefyRelatorioExportTechProcess'),
       functionName: "Mapfre-Awsfn-Pipefy-Relatorio-Export-Tech-Process",
-      handler: 'MapfreAwsfnPipefyRelatorioExportTechProcess.handler',
+      handler: 'lambda_function.lambda_handler',
       memorySize: 1024,
       runtime: lambda.Runtime.PYTHON_3_9,
     });
@@ -20,9 +20,9 @@ export class LambdaStack extends Stack {
     });
 
     const MapfreAwsfnPipefyValFatAuxCargaAsIs = new lambda.Function(this, 'MapfreAwsfnPipefyValFatAuxCargaAsIs', {
-      code: lambda.Code.fromAsset('./src'),
+      code: lambda.Code.fromAsset('./src/MapfreAwsfnPipefyValFatAuxCargaAsIs'),
       functionName: "Mapfre-Awsfn-Pipefy-Val-Fat-Aux-Carga-As-Is",
-      handler: 'MapfreAwsfnPipefyValFatAuxCargaAsIs.handler',
+      handler: 'lambda_function.lambda_handler',
       memorySize: 1024,
       runtime: lambda.Runtime.PYTHON_3_9,
     });
@@ -32,9 +32,9 @@ export class LambdaStack extends Stack {
     });
 
     const MapfreAwsfnPipefyValFatStatusSap = new lambda.Function(this, 'MapfreAwsfnPipefyValFatStatusSap', {
-      code: lambda.Code.fromAsset('./src'),
+      code: lambda.Code.fromAsset('./src/MapfreAwsfnPipefyValFatStatusSap'),
       functionName: "Mapfre-Awsfn-Pipefy-Val-Fat-Status-Sap",
-      handler: 'MapfreAwsfnPipefyValFatStatusSap.handler',
+      handler: 'lambda_function.lambda_handler',
       memorySize: 1024,
       runtime: lambda.Runtime.PYTHON_3_9,
     });
@@ -44,9 +44,9 @@ export class LambdaStack extends Stack {
     });
 
     const MapfreAwsfnPipefyValFaturamentoChecagemAuto = new lambda.Function(this, 'MapfreAwsfnPipefyValFaturamentoChecagemAuto', {
-      code: lambda.Code.fromAsset('./src'),
+      code: lambda.Code.fromAsset('./src/MapfreAwsfnPipefyValFaturamentoChecagemAuto'),
       functionName: "Mapfre-Awsfn-Pipefy-Val-Faturamento-Checagem-Auto",
-      handler: 'MapfreAwsfnPipefyValFaturamentoChecagemAuto.handler',
+      handler: 'lambda_function.lambda_handler',
       memorySize: 1024,
       runtime: lambda.Runtime.PYTHON_3_9,
     });
@@ -56,9 +56,9 @@ export class LambdaStack extends Stack {
     });
 
     const MapfreAwsfnPipefyValFaturamentoGeralKitCsn = new lambda.Function(this, 'MapfreAwsfnPipefyValFaturamentoGeralKitCsn', {
-      code: lambda.Code.fromAsset('./src'),
+      code: lambda.Code.fromAsset('./src/MapfreAwsfnPipefyValFaturamentoGeralKitCsn'),
       functionName: "Mapfre-Awsfn-Pipefy-Val-Faturamento-Geral-Kit-Csn",
-      handler: 'MapfreAwsfnPipefyValFaturamentoGeralKitCsn.handler',
+      handler: 'lambda_function.lambda_handler',
       memorySize: 1024,
       runtime: lambda.Runtime.PYTHON_3_9,
     });
@@ -68,9 +68,9 @@ export class LambdaStack extends Stack {
     });
 
     const MapfreAwsfnPipefyValFaturamentoTratativaCsn = new lambda.Function(this, 'MapfreAwsfnPipefyValFaturamentoTratativaCsn', {
-      code: lambda.Code.fromAsset('./src'),
+      code: lambda.Code.fromAsset('./src/MapfreAwsfnPipefyValFaturamentoTratativaCsn'),
       functionName: "Mapfre-Awsfn-Pipefy-Val-Faturamento-Tratativa-Csn",
-      handler: 'MapfreAwsfnPipefyValFaturamentoTratativaCsn.handler',
+      handler: 'lambda_function.lambda_handler',
       memorySize: 1024,
       runtime: lambda.Runtime.PYTHON_3_9,
     });
