@@ -9,7 +9,7 @@ export class LambdaStack extends Stack {
 
     const LmabdaFunction = new lambda.Function(this, 'LmabdaFunction', {
       code: lambda.Code.fromAsset('./src'),
-      functionName: "Mapfre-Awsfn-Pipefy-Relatorio-Export-Tech-Process",
+      functionName: "LmabdaFunction",
       handler: 'lambda_function.lambda_handler',
       memorySize: 1024,
       runtime: lambda.Runtime.PYTHON_3_9,
