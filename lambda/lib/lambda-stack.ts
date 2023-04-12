@@ -7,16 +7,16 @@ export class LambdaStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
-    const LmabdaFunction = new lambda.Function(this, 'LmabdaFunction', {
+    const LambdaFunction = new lambda.Function(this, 'LambdaFunction', {
       code: lambda.Code.fromAsset('./src'),
-      functionName: "LmabdaFunction",
+      functionName: "LambdaFunction",
       handler: 'lambda_function.lambda_handler',
       memorySize: 1024,
       runtime: lambda.Runtime.PYTHON_3_9,
     });
 
     new apigw.LambdaRestApi(this, 'LambdaRestApi', {
-      handler: LmabdaFunction
+      handler: LambdaFunction
     });   
   }
 }
